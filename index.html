@@ -2,9 +2,220 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Burton Education</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            background-color: rgb(252,235,235);
+        }
+        @import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap%27);
+        @import url(https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap%27);
+        .header-img {
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #fffdd0;
+        }
+
+        .navbar a {
+            font-family: 'Roboto Condensed', sans-serif;
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #fffdd0;
+            color: black;
+        }
+
+        .main {
+            font-family: 'Padauk', sans-serif;
+            font-size: 20px;
+            background-color: white;
+            padding: 20px;
+        }
+        .column {
+            float: left;
+            width: 20%;
+            padding: 2px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        span {
+            display: block;
+        }
+        footer {
+            width: 100%;
+            height: 20%;
+            background-color: rgb(153, 153, 153);
+            color: white;
+            clear: both;
+            padding: 10px;
+        }
+
+        .footerImage {
+            float: right;
+            width: 150px;
+            height: 125px;
+        }
+
+        footer a {
+            color: snow;
+        }
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: black;
+            width: 100%;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        footer h3 {
+            text-align: center;
+            color: white;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        p {
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: black;
+            width: 100%;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+
+
+        @media screen and (max-width: 700px) {
+            .main {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width:100%;
+            }
+        }
+    </style>
 </head>
 <body>
+<img src="img/burton_logo.png" alt="logo burton" style="padding: 10px" ;>
+<div style ="background-color: rgb(252,235,235);">
+    <div class = "navbar">
+        <a href="">Over ons</a>
+        <a href="">Produkten</a>
+        <a href="">Contact</a>
+    </div>
+    <div class="main">
+        <h2>Sport</h2>
 
+        <div class = "row">
+            <div class="column">
+                <a href="Sport/Voetbal.html">
+                    <img class = "afbeelding1" src="https://www.hetamsterdamschevoetbal.nl/wp-content/uploads/2015/07/Sporting.jpg" alt = "Almere voetbal" style = "width: 250px; height: 150px">
+                </a>
+            </div>
+            <div class="column">
+                <a href="Sport/Tennis.html">
+                    <img class = "afbeelding2" src="https://storage.knltb.club/logos/2e726b6f-7e6d-495c-8f0b-6a1090e8fc03.jpg" alt = "Almere tennis" style = "width: 250px; height: 150px">
+                </a>
+            </div>
+            <div class="column">
+                <a href="Sport/Badminton.html">
+                    <img class = "afbeelding3" src="https://media.discordapp.net/attachments/646832472947949588/789110118574850058/image0.jpg?width=726&height=498" alt = "Almere badminton" style = "width: 250px; height: 150px">
+                </a>
+            </div>
+            <div class = "text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class="column">
+                <a href="Sport/Karate.html">
+                    <img class = "afbeelding1" src="https://www.trainingscenterdesportclub.nl/wp-content/uploads/2019/07/Foto-kids-fight-club_LI.jpg" alt = "Almere karate" style = "width: 250px; height: 150px">
+                </a>
+            </div>
+            <div class="column">
+                <a href="Sport/Kendo.html">
+                    <img class = "afbeelding2" src="https://cdn.discordapp.com/attachments/552950087723253784/789378850513616916/image0.jpg" alt = "Almere kendo" style = "width: 250px; height: 150px">
+                </a>
+            </div>
+            <div class="column">
+                <a href="Sport/Boksen.html">
+                    <img class = "afbeelding3" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fsportenfitnesscenter.nl%2Falmere%2Fwp-content%2Fuploads%2F2019%2F11%2Falmere_fitness_cardio_kick_boks.jpg&f=1&nofb=1" alt = "Almere boksen" style = "width: 250px; height: 150px">
+                </a>
+            </div>
+            <div class = "text">
+                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.nteger tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class="column">
+                <a href="Sport/Basketbal.html">
+                    <img class = "afbeelding1" src="https://images.sportlinkclubsites.nl/new/?token=RdFbCMmaIRb8j4TeOciv1zPnkv2iH57L3aLBz4eM8pUTBBu4rZDQwCoNU5iuxouF&type=teamfoto&client_id=KVhYkDNHeX&teamcode=717&lokaleteamcode=-1" alt = "Almere basketbal" style = "width: 250px; height: 150px">
+                </a>
+            </div>
+            <div class="column">
+                <a href="Sport/Zwemmen.html">
+                    <img class = "afbeelding2" src="https://media.insiders.nl/tfl/files/image/8a44e09665e7ec7284ec85b2a3ef7f412a4ad8de.jpeg" alt = "Almere zwemmen" style = "width: 250px; height: 150px">
+                </a>
+            </div>
+            <div class="column">
+                <a href="Sport/Hockey.html">
+                    <img class = "afbeelding3" src="https://almeerse.nl/files/nieuws/Almeerse%20HJ1.jpg" alt = "Almere hockey" style = "width: 250px; height: 150px">
+                </a>
+            </div>
+            <div class = "text">
+                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class = "sportclubs">
+    <article>
+        <p><b>Links en adressen van sportclubs in Almere</b></p>
+        <p><span>Morbi ut gravida enim. Aliquam ornare mattis interdum.</span><span> Suspendisse potenti. Integer semper commodo dui, </span><span>vitae hendrerit metus maximus sed. Proin gravida </span><span>vestibulum sodales. Duis ipsum sapien, efficitur euismod </span><span>congue et, consequat ac felis. Sed sem ante, commodo </span><span>quis tortor et, tristique elementum enim. Nam a molestie nunc.</span><span>
+        Mauris a leo non eros eleifend vehicula. Integer </span><span>Praesent ac massa at ligula laoreet iaculis. Nulla neque dolor</span><span>Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula.</span>
+        </p>
+    </article>
+</div>
+<footer>
+    <img class="footerImage" src="../img/groepsFoto.jpg">
+    <h4>Sitelinks</h4><p>
+    <a href="../html/concert.html">Concerten</a> &emsp;&emsp; <a href="../html/Recepten.html">Recepten</a><br>
+    <a href="../html/sport.html">Sport</a> &emsp;&emsp;&emsp;&emsp; <a href="../html/recepten/Boerenkool.html">Recept Boerenkool</a><br>
+    <a href="../html/contact.html">Contact</a> &emsp;&emsp;&emsp; <a href="../html/recepten/Vissticks.html">Recept Vissticks</a><br>
+    <a href="../html/overons.html">Over ons</a> &emsp;&emsp;&ensp; <a href="../html/recepten/Gefrituurde kip.html">Recept Gefrituurde Kip</a> <br></p>
+
+    <h3>Copyright &copy; roc-dev.com 2020</h3>
+</footer>
+</div>
 </body>
 </html>
