@@ -3,92 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Burton Education</title>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        div#wrapper, footer {
-            margin:auto;
-            width: 1000px;
-            background-color: rgb(252,235,235);
-            padding: 20px;
-        }
-        body {
-            font-family: "Arial", "sans-serif";
-            line-height: 24px;
-        }
-
-        .navbar {
-            overflow: hidden;
-            background-color: #fcebeb;
-        }
-
-        .navbar a {
-            font-family: 'Roboto Condensed', sans-serif;
-            float: left;
-            display: block;
-            color: #000000;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        .navbar a:hover {
-            background-color: #fffdd0;
-            color: black;
-        }
-
-        @media screen and (max-width: 400px) {
-            .navbar a {
-                float: none;
-                width:100%;
-            }
-        }
-
-        span {
-            display: block;
-        }
-
-        section.appel, section.visuals{
-            width: 50%;
-            float: left;
-        }
-
-        section.visuals {
-            text-align: right;
-        }
-
-        img.appel {
-            width:497px;
-        }
-        img.visuals {
-            width: 447px;
-            margin-bottom: 13px;
-        }
-        img.article {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 303px;
-        }
-        article {
-            display: inline-block;
-            width: 33%;
-            padding-right: 15px;
-            vertical-align: top;
-        }
-
-        article:last-child {
-            padding-right: 0px;
-        }
-
-        footer {
-            background-color: rgb(166,166,166);
-            color: white;
-        }
-        footer a{
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
 <div id="wrapper">
@@ -100,36 +15,42 @@
         <a href="">Contact</a>
     </div>
     <section class="appel">
-    <img src="img/appel.jpg" alt = "Appel">
+    <img id="appel" src="img/appel.jpg" alt = "Appel">
     </section>
     <section class="visuals">
-    <img src="img/bus.jpg" alt = "Bus">
-    <img src="img/desk.jpg" alt = "Desk">
-    <img src="img/pythagoras.jpg" alt = "Pythagoras">
+    <img class="visualsimages" src="img/bus.jpg" alt = "Bus">
+    <img class="visualsimages" src="img/desk.jpg" alt = "Desk">
+    <img class="visualsimages" src="img/pythagoras.jpg" alt = "Pythagoras">
     </section>
 <section class="artikelen">
     <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h1>
-    <article>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+    <article>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
         Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
         Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
         Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
         justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper
         nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
         Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-        Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</article>
+        Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+    </article>
 
-    <article>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+    <article>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
         Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
         Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. <img class="article" src="img/football.jpg" alt="football">
+        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+        <img class="article" src="img/football.jpg" alt="football">
         In enim justo, rhoncus ut, imperdiet
         a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
         Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
         consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
         Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi
-        vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</article>
+        vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+    </article>
 
-    <article>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+    <article>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
         Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
         Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
         Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
@@ -137,7 +58,9 @@
         Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
         consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
         Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
-        nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. <img class="article" src="img/book.jpg" alt="boek" </article>
+        nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+        <img class="article" src="img/book.jpg" alt="boek">
+    </article>
 </section>
 </div>
 </div>
