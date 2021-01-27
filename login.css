@@ -1,11 +1,9 @@
-form ul {
-    list-style-type: none;
-    padding: 0;
-}
-form ul li {
+div.form-group {
+    width: 300px;
     padding: 10px;
 }
-form ul li input {
-    position: absolute;
-    left: 150px;
+
+textarea {
+    width: 300px;
+    height: 200px;
 }
