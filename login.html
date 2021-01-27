@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Roboto Light", sans-serif;
+            font-size: 15px;
+        }
+    </style>
 </head>
 <body>
 <ul>
 <h2>Formulier</h2>
-<form action="https://www.savatarian.com/html5/form.php" method="post"></form>
+<form action="https://www.savatarian.com/html5/form.php" method="get"></form>
     <div class="form-group">
     <label for="voornaam">Voornaam</label>
     <input type="text" name="voornaam" id="voornaam"/>
@@ -44,6 +52,17 @@
         <label for="omschrijving">Omschrijving</label>
         <textarea name="omschrijving" id="omschrijving"></textarea>
     </div>
+    <div class="form-group">
+        <label for="lekker eten">Lekker eten</label>
+        <input type="checkbox" name="lekker eten" id="lekker eten" value="sperciebonen"/>
+        <span class="checkbox">Sperciebonen</span><br>
+        <input type="checkbox" name="lekker eten" value="aardappelen"/>
+        <span class="checkbox">Aardappelen</span><br>
+        <input type="checkbox" name="lekker eten" value="hamburger"/>
+        <span class="checkbox">Hamburger</span>
+    </div>
+    <button type="button">Annuleer</button>
+    <button type="button" onclick="onsubmit(get)">Ok</button>
 </ul>
 </body>
 </html>
